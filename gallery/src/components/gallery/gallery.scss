@@ -1,0 +1,42 @@
+/* src/styles/gallery.scss */
+
+.gallery {
+  column-count: 4;
+  column-gap: 1rem;
+  padding: 1rem;
+}
+
+.image-card {
+  break-inside: avoid;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.image-card img {
+  width: 100%;
+  display: block;
+}
+
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.5rem;
+}
+
+.tag {
+  font-size: 12px;
+  background: #eee;
+  padding: 4px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.tag:hover {
+  background: #0070f3;
+  color: white;
+}
